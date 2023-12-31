@@ -20,24 +20,62 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
-
-
-
-
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: Allen Joveth P
+RegisterNumber: 23009582
+'''
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1, len(nums)):
+            if nums[j] < nums[lowest_value_index]:
+                lowest_value_index = j
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index],nums[i]
+        
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 ```
 ii)	#Insertion Sort
 ```
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: Allen Joveth P
+RegisterNumber: 23009582
+'''
+def insertion_sort(nums):
 
+    for i in range(1, len(nums)):
 
+        item_to_insert = nums[i]
 
+        j = i - 1
 
+        while j >= 0 and nums[j] > item_to_insert:
 
+            nums[j+1] = nums[j]
 
+            j -= 1
+
+        nums[j+1] = item_to_insert
+
+        
+
+list_of_nums = eval(input())
+
+insertion_sort(list_of_nums)
+
+print(list_of_nums)
 ```
 
 ## Output:
 
+#Selection Sort
+![Screenshot 2023-12-31 135327](https://github.com/allenjoveth/Sorting-Algorithm/assets/139422287/5640645a-00b1-4c38-8b81-7317e2afe646)
+
+#Insertion Sort
+![Screenshot 2023-12-31 135442](https://github.com/allenjoveth/Sorting-Algorithm/assets/139422287/d35aa4b8-e9d1-4b43-8849-c4006fb4549f)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
