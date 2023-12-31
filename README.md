@@ -5,7 +5,10 @@ To write a program to perform selection sort and insertion sort using python pro
 1.	Hardware – PCs
 2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-1. start the 
+1. start the program to sort and inserting sort fas function
+2. then give condition respective to the question in for loop
+3. then seperate the values
+4. now the sorting and insertion sorting as been done to give output 
 ## Selection Sort Algorithm:
 1.	Set the first unsorted element as the minimum
 2.	For each of the unsorted elements, check if the element < current minimum.
